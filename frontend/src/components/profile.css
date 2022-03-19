@@ -1,0 +1,215 @@
+.grid-sm-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 4rem;
+}
+
+.grid-sm-profile>div {
+    border: 1px solid #F7F7F7;
+    height: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.grid-sm-profile>div:nth-child(1) {
+    text-align: center;
+}
+
+.grid-sm-profile>div>div>img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.grid-sm-profile>div>.link {
+    font-family: 'Fredoka', sans-serif;
+    text-decoration: none !important;
+    color: #333;
+    background-color: transparent;
+}
+
+.grid-sm-profile>div>.link button {
+    margin-top: 2rem;
+    background-color: #F7F7F7;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+}
+
+
+.grid-sm-profile>div:nth-child(2) {
+    padding: 20px 20px 20px 20px;
+}
+
+.grid-sm-profile>div:nth-child(2) .label {
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: calc(14pt + 0.15vw);
+    margin-bottom: 0rem;
+}
+
+.line-chart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    margin: 2.5rem auto 2.5rem auto;
+}
+
+.line-chart>div {
+    margin: auto;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+}
+
+.edit-profile {
+    background-color: #F7F7F7 !important;
+    margin-top: 1rem !important;
+}
+
+input[type='file'] {
+    height: 50px !important;
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+    background: #F7F7F7;
+    border: none !important;
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 0.03em;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+}
+
+@media screen and (max-width: 1080px) {
+    .line-chart {
+        max-width: 100%;
+    }
+
+    .line-chart {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.grid-sm-profile>div:nth-child(2) .label-data {
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 640px) {
+    .grid-sm-profile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.amount-panel {
+    padding: 30px 0px 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 60%;
+    margin: auto;
+    grid-gap: 3rem;
+}
+
+.amount-panel>div {
+    border: 1px solid #D7D7D7;
+    padding: 15px 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+}
+
+.amount-panel>div>p {
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.amount-panel-bg {
+    margin-top: 2rem;
+    height: auto;
+    background-color: #F7F7F7;
+}
+
+.ripples {
+    position: absolute;
+    top: -50px;
+    left: -13px;
+    background-color: red;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    display: grid;
+    animation: ripple 3s linear infinite;
+    -webkit-animation: ripple 3s linear infinite;
+}
+
+.ripples::before,
+.ripples::after {
+    content: "";
+    grid-area: 1/1;
+    border-radius: 50%;
+    animation: inherit;
+    animation-delay: 1s;
+}
+
+.ripples::after {
+    animation-delay: 2s;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 .1rem rgba(204, 13, 13, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 1rem rgba(220, 1, 1, 0);
+    }
+}
+
+.relative-live {
+    position: relative;
+    top: 0;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .amount-panel {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .amount-panel {
+        max-width: 70%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .amount-panel {
+        max-width: 50%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .amount-panel {
+        max-width: 70%;
+    }
+}
+
+.profile-wrapper{
+    margin-top: 8rem;
+}

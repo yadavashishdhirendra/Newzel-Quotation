@@ -1,0 +1,35 @@
+.pro-sidebar {
+    height: 100vh !important;
+    position: fixed;
+    top: 93px;
+    left: 0;
+}
+
+.relative-menu {
+    position: relative;
+    top: 5.9rem;
+}
+
+.hamburger-icon {
+    position: fixed;
+    top: 92px;
+    left: 22px;
+    z-index: 99999;
+    color: black;
+    background-color: white;
+    font-size: 2rem !important;
+    cursor: pointer;
+}
+
+.pro-sidebar>.pro-sidebar-inner>.pro-sidebar-layout {
+    padding-top: 3rem !important;
+}
+
+.pro-sidebar .pro-menu>ul>.pro-sub-menu>.pro-inner-list-item {
+    background-color: hsla(0, 0%, 100%, .05) !important;
+}
+
+.pro-item-content {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}

@@ -1,0 +1,23 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#__react-alert__ div {
+  width: fit-content !important;
+  right: 0px !important;
+  left: unset !important;
+  font-family: 'Fredoka', sans-serif !important;
+}
+
+body, html {
+  overflow-x: hidden;
+}

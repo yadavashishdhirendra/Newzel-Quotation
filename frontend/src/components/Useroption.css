@@ -1,0 +1,33 @@
+.speedDial-Icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-family: 'Fredoka', sans-serif !important;
+}
+
+.speedDial {
+    position: fixed;
+    right: 2%;
+    top: 2.5%;
+    font-family: 'Fredoka', sans-serif !important;
+}
+
+.speedDial-actions button{
+    font-family: 'Fredoka', sans-serif !important;
+}
+
+
+.MuiSpeedDialAction-tooltipPlacementLeft .MuiSpeedDialAction-staticTooltipLabel {
+    white-space: nowrap !important;
+}
+
+@media screen and (max-width: 992px) {
+    .speedDial {
+        top: 10%;
+    }
+
+}

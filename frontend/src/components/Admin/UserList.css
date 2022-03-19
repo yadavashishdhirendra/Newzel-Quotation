@@ -1,0 +1,28 @@
+.text-container-wrapper>h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}
+
+.text-container-wrapper>h3>span {
+    border-bottom: 4px solid #0E185F;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.MuiDataGrid-root{
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+}
+
+@media screen and (max-width: 992px) {
+    .dashboard-algn-col {
+        margin-left: 2rem;
+    }
+}
